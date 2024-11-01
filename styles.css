@@ -189,8 +189,8 @@ h2 {
     }
 
     #loader img {
-        width: 100px; /* Ajusta este valor para cambiar el tamaño del GIF */
+        width: 50px; /* Ajusta este valor para cambiar el tamaño del GIF */
         height: auto;
-        max-width: 80%; /* Para que se ajuste en pantallas más pequeñas */
+        max-width: 40%; /* Para que se ajuste en pantallas más pequeñas */
     }
 }
