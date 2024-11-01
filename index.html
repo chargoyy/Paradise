@@ -4,6 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Carga de Inicio</title>
+    <style>
+        /* Ajustes básicos de la página */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo de la pantalla de carga */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* Fondo negro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        #loader img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Ocultar el loader después de 3 segundos */
+        .hidden {
+            animation: fadeOut 1s ease forwards;
+            animation-delay: 3s;
+        }
+
+        /* Animación de desaparición */
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        /* Contenido principal */
+        #main-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Mostrar contenido principal después de 3 segundos */
+        .loaded #main-content {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pantalla de carga con el GIF -->
+    <div id="loader" class="hidden">
+        <img src="Gif Paradise.gif" alt="Cargando...">
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <h1>Bienvenido a Paradise</h1>
+        <p>Disfruta de la música y el arte.</p>
+    </div>
+
+    <script>
+        // Esperar 3 segundos y luego ocultar la pantalla de carga
+        setTimeout(() => {
+            document.body.classList.add('loaded');
+        }, 3000);
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradise - Feel the Music</title>
     <link rel="stylesheet" href="styles.css">
 </head>
