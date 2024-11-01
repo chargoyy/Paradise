@@ -167,7 +167,7 @@ h2 {
 }
 
 #preloader img {
-    width: 10%; /* Ajusta el tamaño del GIF, prueba con 50% o un valor adecuado */
+    width: 20%; /* Ajusta el tamaño del GIF, prueba con 50% o un valor adecuado */
     max-width: auto; /* Limita el ancho máximo para evitar que sea demasiado grande */
     height: auto;
 }
