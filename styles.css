@@ -154,7 +154,7 @@ h2 {
 
 /* Pantalla de Carga */
 .logo-placeholder {
-    width: 200px; /* Ajusta el ancho de la sección del logo */
+    width: 300px; /* Ajusta el ancho de la sección del logo */
     height: auto; /* Permite que la altura se ajuste proporcionalmente */
     display: flex;
     align-items: center;
