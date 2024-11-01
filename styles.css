@@ -177,8 +177,6 @@ h2 {
     
    #loader {
         position: fixed;
-        top: 0;
-        left: 0;
         width: 200px;
         height: 200px;
         background-color: #000; /* Fondo negro */
@@ -189,9 +187,8 @@ h2 {
     }
 
     #loader img {
-        width: 80%; /* Ajusta este valor para cambiar el tamaño del GIF */
+        width: 60%; /* Ajusta este valor para cambiar el tamaño del GIF */
         height: auto;
-        max-width: 100%; /* Para que se ajuste en pantallas más pequeñas */
     }
     
 }
