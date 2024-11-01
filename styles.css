@@ -173,22 +173,24 @@ h2 {
     .social-links a img {
         width: 60px;
         height: 60px;
-    #loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000; /* Fondo negro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
+    }
+    
+   #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000; /* Fondo negro */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
     }
 
     #loader img {
-    width: 50%; /* Cambia este valor para ajustar el tamaño relativo a la pantalla */
-    max-width: 150px; /* Tamaño máximo en píxeles */
-    height: auto;
+        width: 100px; /* Ajusta este valor para cambiar el tamaño del GIF */
+        height: auto;
+        max-width: 80%; /* Para que se ajuste en pantallas más pequeñas */
     }
 }
