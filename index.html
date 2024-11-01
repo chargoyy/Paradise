@@ -105,12 +105,15 @@
     <!-- JavaScript para el preloader -->
     <script>
         window.addEventListener("load", function() {
-            var loader = document.getElementById("preloader");
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
             loader.classList.add("fade-out"); // Aplica la clase de desvanecimiento
-            setTimeout(function() {
-                loader.style.display = "none"; // Oculta el preloader
-            }, 800); // Tiempo en ms para que coincida con la animación
-        });
+        }, 3000); // Mantiene el preloader visible durante 1.5 segundos antes de iniciar el desvanecimiento
+
+        setTimeout(function() {
+            loader.style.display = "none"; // Oculta el preloader tras el desvanecimiento
+        }, 4000); // Oculta el preloader después de 4 segundos en total
+    });
     </script>
 </body>
 </html>
