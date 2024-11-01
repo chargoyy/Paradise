@@ -50,9 +50,9 @@ h2 {
 /* Específicamente elimina el fondo y padding para #feelthemusic y #finalquote */
 #feelthemusic .frame,
 #finalquote .frame {
-    background: none; /* Quita el fondo */
-    padding: 0; /* Quita el padding */
-    box-shadow: none; /* Elimina cualquier sombra */
+    background: none;
+    padding: 0;
+    box-shadow: none;
 }
 
 #feelthemusic, #finalquote {
@@ -60,7 +60,7 @@ h2 {
     font-size: 4rem;
     font-style: italic;
     text-align: center;
-    margin: 2rem 0; /* Agrega un margen para separación */
+    margin: 2rem 0;
 }
 
 .gallery-container {
@@ -123,10 +123,10 @@ h2 {
 
 .social-links {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en una columna */
+    flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
-    align-items: center; /* Centra los elementos en la pantalla */
+    align-items: center;
     margin-top: 1rem;
 }
 
@@ -152,6 +152,30 @@ h2 {
     transform: scale(1.1);
 }
 
+/* Pantalla de Carga */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#preloader img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
 @media (max-width: 768px) {
     section {
         padding: 2rem 1rem;
@@ -169,26 +193,9 @@ h2 {
         height: 200px;
         margin: 4rem auto;
     }
-    
+
     .social-links a img {
         width: 60px;
         height: 60px;
     }
-    
-   #loader {
-        position: fixed;
-        width: 200px;
-        height: 200px;
-        background-color: #000; /* Fondo negro */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-    }
-
-    #loader img {
-        width: 60%; /* Ajusta este valor para cambiar el tamaño del GIF */
-        height: auto;
-    }
-    
 }
