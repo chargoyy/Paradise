@@ -163,7 +163,7 @@ h2 {
 }
 
 .logo-placeholder img {
-    width: 300px; /* Asegúrate de que el logo ocupe todo el ancho del contenedor */
+    width: 600px; /* Asegúrate de que el logo ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción del logo */
     max-width: none; /* Elimina el límite en el tamaño máximo del logo */
 }
