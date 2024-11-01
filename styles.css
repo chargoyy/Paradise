@@ -175,8 +175,8 @@ h2 {
         height: 60px;
     }
     
-    #preloader{
-    background: #000 url(Prueba Paradise/Gif Paradise.gif) no-repeat center center;
+#preloader {
+    background: #000 url(Prueba_Paradise/Gif_Paradise.gif) no-repeat center center;
     background-size: 20%;
     height: 100vh;
     width: 100%;
