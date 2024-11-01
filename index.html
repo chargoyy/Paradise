@@ -10,7 +10,17 @@
 <body>
     <div id= "preloader"></div>div>
 
+    <!-- Pantalla de carga con el GIF -->
+    <div id="loader" class="hidden">
+        <img src="Gif Paradise.gif" alt="Cargando...">
+    </div>
     
+    <script>
+        // Ocultar la pantalla de carga después de 3 segundos
+        setTimeout(() => {
+            document.getElementById('loader').style.display = 'none';
+        }, 3000);
+    </script>
     <!-- Logo Section -->
     <section id="logo">
         <div class="logo-placeholder">
