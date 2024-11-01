@@ -183,7 +183,7 @@ h2 {
 }
 
 #preloader img {
-    width: 100px; /* Ajusta el tamaño del GIF según sea necesario */
+    width: 200px; /* Ajusta el tamaño del GIF según sea necesario */
     height: auto; /* Mantiene la proporción del GIF */
 }
 
